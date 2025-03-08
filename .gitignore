@@ -20,6 +20,7 @@ cmake_install.cmake
 # IDE-specific files
 .idea/
 *.code-workspace
+managed_components/
 
 # OS-specific files
 .DS_Store
