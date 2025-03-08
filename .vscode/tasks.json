@@ -1,1 +1,26 @@
-{}
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Set Target and Build",
+            "type": "shell",
+            "command": "idf.py",
+            "args": [
+                "--preview",
+                "set-target",
+                "linux",
+                "&&",
+                "idf.py",
+                "build"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Task to set target to linux and build the project using idf.py"
+        }
+    ]
+}

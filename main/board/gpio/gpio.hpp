@@ -11,10 +11,16 @@
 #define _gpio_hpp_
 
 /** @section Includes */
+#ifdef __ESP_PLATFORM__
+#include "driver/gpio.h"
+#else
+#include "../../../host/mocks/driver/mock_gpio.h"
+#endif
 
 namespace zigbee_mailbox {
 
 /** @section Defines */
+static const gpio_num_t kGpioNum = GPIO_NUM_0;
 
 /** @section Functions */
 // Public

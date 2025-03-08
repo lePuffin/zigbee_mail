@@ -12,7 +12,13 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 
-#include "board/gpio.hpp"
+#include "board/gpio/gpio.hpp"
+
+#ifdef __ESP_PLATFORM__
+#include "driver/gpio.h"
+#else
+#include "../host/mocks/driver/mock_gpio.h"
+#endif
 
 /** @section Defines */
 

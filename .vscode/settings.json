@@ -32,5 +32,17 @@
         "unmatchedSuppression",
         "missingIncludeSystem"
     ],
-    "cpp-check-lint.cpplint.--filter=": "filter=-build/header_guard,-build/include_subdir"
+    "cpp-check-lint.cpplint.--filter=": "filter=-build/header_guard,-build/include_subdir",
+    "files.associations": {
+        "gpio.h": "c",
+        "array": "cpp",
+        "*.tcc": "cpp",
+        "memory": "cpp",
+        "format": "cpp",
+        "istream": "cpp",
+        "functional": "cpp",
+        "tuple": "cpp",
+        "utility": "cpp",
+        "variant": "cpp"
+    }
 }
