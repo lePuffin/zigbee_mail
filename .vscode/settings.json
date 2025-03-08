@@ -1,0 +1,29 @@
+{
+    "C_Cpp.intelliSenseEngine": "default",
+    "C_Cpp.clang_format_style": "file:${workspaceFolder}/doc/.clang-format",
+    "C_Cpp.clang_format_sortIncludes": true,
+    "C_Cpp.formatting": "clangFormat",
+    "editor.formatOnSave": true,
+    "C_Cpp.autocompleteAddParentheses": true,
+    "C_Cpp.inlayHints.autoDeclarationTypes.enabled": true,
+    "C_Cpp.inlayHints.autoDeclarationTypes.showOnLeft": true,
+    "C_Cpp.inlayHints.parameterNames.enabled": true,
+    "C_Cpp.inlayHints.parameterNames.suppressWhenArgumentContainsName": false,
+    "C_Cpp.inlayHints.referenceOperator.enabled": true,
+    "C_Cpp.inlayHints.referenceOperator.showSpace": true,
+    "C_Cpp.vcFormat.indent.braces": false,
+    "cpputestTestAdapter.testExecutable": "${workspaceFolder}/build/tests/UnitTests",
+    "cpputestTestAdapter.testExecutablePath": "${workspaceFolder}/build/tests",
+    "editor.tabCompletion": "on",
+    "idf.pythonInstallPath": "/opt/esp/python_env/idf5.4_py3.12_env/bin/python",
+    "idf.espIdfPath": "/opt/esp/idf",
+    "idf.toolsPath": "/opt/esp",
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "idf.customExtraVars": {
+        "IDF_TARGET": "esp32h2"
+    },
+    "idf.openOcdConfigs": [
+        "board/esp32h2-builtin.cfg"
+    ],
+    "idf.port": "/dev/ttyS0"
+}

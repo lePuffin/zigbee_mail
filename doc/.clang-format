@@ -1,0 +1,52 @@
+# Use the latest ClangFormat style version
+BasedOnStyle: Google
+
+# General settings
+Language: Cpp
+IndentWidth: 4        # Use 4 spaces for indentation
+TabWidth: 4           # Tab equivalent for alignment
+UseTab: Never         # Never use tabs, only spaces
+ColumnLimit: 100      # Maximum line length
+AccessModifierOffset: -2  # Align public/private/protected with indentation
+
+# Brace wrapping
+BraceWrapping:
+  AfterClass: true
+  AfterControlStatement: true
+  AfterEnum: true
+  AfterFunction: false  # No line break after function definition
+  AfterNamespace: false
+  BeforeCatch: true
+  SplitEmptyFunction: false
+
+# Include style
+IncludeBlocks: Preserve # Preserve #include order
+SortIncludes: false     # Avoid auto-sorting includes (keep logical ordering)
+
+# Spaces
+SpacesInParentheses: false  # No spaces inside parentheses
+SpaceBeforeParens: ControlStatements # Add space before if/while/for/switch
+SpaceAfterCStyleCast: true
+SpaceBeforeRangeBasedForLoopColon: true
+SpacesInAngles: false      # No spaces inside template brackets
+
+# Alignments
+AlignTrailingComments: true
+AlignOperands: true
+AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations: true
+
+# Namespace and indent options
+NamespaceIndentation: None # Do not indent inside namespaces
+
+# Pointer and reference alignment
+PointerAlignment: Left  # Align pointers with the type (e.g., int* ptr)
+DerivePointerAlignment: false
+
+# Templates
+TemplateArgumentSpacing: AroundComma # Add spaces around template commas
+
+# C++11/14/17/20 features
+AllowShortFunctionsOnASingleLine: InlineOnly
+BreakBeforeBraces: Attach           # Attach braces on the same line as function definition
+CompactNamespaces: false            # Do not compact namespace blocks

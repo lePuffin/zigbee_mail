@@ -1,0 +1,31 @@
+{
+	"organized cpp file with header": {
+		"prefix": "source-file",
+		"body": [
+			"$BLOCK_COMMENT_START",
+			"** Copyright: Copyright (c) 2024 Carlos Estevao",
+			"** Author: lePuffin",
+			"** Date: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
+			"** Brief: ${4:Brief description of the file}",
+			"$BLOCK_COMMENT_END",
+			"",
+			"",
+			"$BLOCK_COMMENT_START***** Includes *****$BLOCK_COMMENT_END",
+			"#include \"${TM_FILENAME_BASE}.hpp\"",
+			"",
+			"",
+			"$BLOCK_COMMENT_START***** Defines *****$BLOCK_COMMENT_END",
+			"",
+			"",
+			"$BLOCK_COMMENT_START***** Functions *****$BLOCK_COMMENT_END",
+			"// Public",
+			"",
+			"",
+			"// Private",
+			"",
+			"",
+			"// End of file"
+		],
+		"description": "Generate a structured .cpp file with a header section for copyright, author, date, and brief description, followed by sections for includes, defines, public and private functions, and the main function."
+	}
+}
