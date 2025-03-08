@@ -1,25 +1,29 @@
-/*
-** Copyright: Copyright (c) 2024 Carlos Estevao
-** Author: lePuffin
-** Date: 2025-03-08
-** Brief: Main File
-*/
+/**
+ * @file main.cpp
+ *
+ * @copyright Copyright (c) 2024 Carlos Estevao
+ * @author lePuffin
+ * @date 2025-03-08
+ */
 
-/****** Includes ******/
+/** @section Includes */
 #include "esp_log.h"
 #include "esp_system.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 
-/****** Defines ******/
+#include "board/gpio.hpp"
 
-/****** Functions ******/
+/** @section Defines */
+
+/** @section Functions */
 // Public
-
 static const char* TAG = "main";
 
 extern "C" void app_main(void) {
-    ESP_LOGI(TAG, "Hello, ESP32-H2!");
+    ESP_LOGI(TAG, "Hello, Carlos!");
+
+    zigbee_mailbox::GPIO gpio;
 
     while (true) {
         ESP_LOGI(TAG, "Running...");

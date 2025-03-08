@@ -25,5 +25,12 @@
     "idf.openOcdConfigs": [
         "board/esp32h2-builtin.cfg"
     ],
-    "idf.port": "/dev/ttyS0"
+    "idf.port": "/dev/ttyS0",
+    "cpp-check-lint.cppcheck.--std_c++=": "c++17",
+    "cpp-check-lint.cppcheck.--std_c=": "c99",
+    "cpp-check-lint.cppcheck.--suppress=": [
+        "unmatchedSuppression",
+        "missingIncludeSystem"
+    ],
+    "cpp-check-lint.cpplint.--filter=": "filter=-build/header_guard,-build/include_subdir"
 }
