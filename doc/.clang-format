@@ -6,7 +6,7 @@ Language: Cpp
 IndentWidth: 4        # Use 4 spaces for indentation
 TabWidth: 4           # Tab equivalent for alignment
 UseTab: Never         # Never use tabs, only spaces
-ColumnLimit: 100      # Maximum line length
+ColumnLimit: 120      # Maximum line length
 AccessModifierOffset: -2  # Align public/private/protected with indentation
 
 # Brace wrapping

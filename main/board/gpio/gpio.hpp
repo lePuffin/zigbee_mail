@@ -11,10 +11,11 @@
 #define _gpio_hpp_
 
 /** @section Includes */
-#ifdef __ESP_PLATFORM__
-#include "driver/gpio.h"
-#else
+
+#ifdef __ESP_LINUX__
 #include "../../../host/mocks/driver/mock_gpio.h"
+#else
+#include "driver/gpio.h"
 #endif
 
 namespace zigbee_mailbox {
